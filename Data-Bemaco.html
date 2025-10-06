@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Data Bemaco</title>
+  <style>
+    :root {
+      --maxw: 1100px;
+      --pad: 14px;
+      --gap: 12px;
+      --brand: #222;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      background: #fff;
+    }
+    .page {
+      margin: 0 auto;
+      max-width: var(--maxw);
+      padding: var(--pad);
+    }
+    /* Header horizontal (logo + teks) */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--gap);
+      padding: 10px 6px;
+      border-bottom: 1px solid #e5e5e5;
+      flex-wrap: wrap;
+    }
+    .logo-wrap {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 40%;
+      min-width: 120px;
+    }
+    header img {
+      max-height: 64px;
+      height: auto;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
+    }
+    header h2 {
+      margin: 0;
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--brand);
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+    /* Iframe section */
+    .iframe-shell {
+      margin-top: 14px;
+      border: 1px solid #e5e5e5;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #fafafa;
+    }
+    .iframe-bar {
+      padding: 8px 12px;
+      font-size: 12px;
+      color: #666;
+      background: #f4f4f4;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .iframe-holder {
+      position: relative;
+      width: 100%;
+      height: 600px;
+      background: #fff;
+    }
+    .iframe-holder iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      overflow: auto;
+    }
+    @media (max-width: 640px) {
+      header h2 { font-size: 20px; }
+      header img { max-height: 56px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="logo-wrap">
+        <img src="https://drive.google.com/uc?export=view&id=1cdfm9xMe-Iy6yquOrWLuTLITg23IVaX6" alt="Logo Bemaco" />
+      </div>
+      <h2>DATA BEMACO</h2>
+    </header>
+
+    <section class="iframe-shell" aria-label="Embedded Data">
+      <div class="iframe-bar">Embedded Google Apps Script</div>
+      <div class="iframe-holder">
+        <iframe
+          src="https://script.google.com/macros/s/AKfycbxREg39BEAH7qUUfhqPK8mRs-4r8w6-VmcuDWqWBXfqnJtBHBDBNS8-Y_IYGTvVc7Zw/exec"
+          title="Data Bemaco Web App"
+          loading="lazy"
+          allow="fullscreen"
+        ></iframe>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
